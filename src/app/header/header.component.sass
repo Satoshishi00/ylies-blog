@@ -1,0 +1,103 @@
+$blue: #2980b9
+$green: #16a085
+$orange: #d35400
+$purple: #8e44ad
+
+h1
+    color: $blue
+    text-align: center
+    font-size: 3.5rem
+    margin: 1rem
+h2
+    text-align: center
+    color: #767676
+    font-size: 1.5rem
+
+ul
+    list-style-type: none
+    display: flex
+
+a
+    text-decoration: none
+
+.header-top
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: lightgrey
+    .titles-container
+        display: flex
+        justify-content: center
+        align-items: center
+        .img-ylies
+            height: 110px
+            width: 110px
+            border-radius: 50%
+    .social-networks-links
+        display: flex
+        flex-direction: column
+        li
+            height: 56px
+            width: 56px
+        li:hover
+            cursor: pointer
+        .link-1
+            border: 2px solid $orange
+        .link-2
+            border: 2px solid $green
+            margin-right: 59px
+        .link-3
+            border: 2px solid $purple
+        .margin-left
+            margin-left: 60px
+        .icon
+            height: 40px
+            width: 40px
+            padding: 8px
+            transition: all 0.3s ease-out
+        .icon:hover
+            cursor: pointer
+            height: 50px
+            width: 50px
+            padding: 3px
+            transition: all 0.4s ease-out
+
+.menu
+    justify-content: space-evenly
+    font-weight: bold
+    margin: 0rem 3rem
+    padding: 0.5rem 0rem
+    background-color: lightgrey
+    li
+        padding: 0.5rem 1rem
+        border-radius: 1.5rem
+        magin: 1rem
+        transition: all 0.4s ease-out
+        //background: white
+    li:hover
+        cursor: pointer
+        transition: all 0.4s ease-out
+        padding: 0.5rem 2rem
+    .link-1
+        border: 2px solid $purple
+        color: $purple
+    .link-2
+        border: 2px solid $green
+        color: $green
+    .link-3
+        border: 2px solid $orange
+        color: $orange
+
+// @keyframes hover-anim
+//     0%
+//         padding: 0.5rem 1rem
+//     15%
+//         padding: 0rem 1rem 1rem 1rem
+//     35%
+//         padding: 0.5rem 0rem 0.5rem 2.5rem
+//     65%
+//         padding: 0.5rem 3rem 0.5rem 0rem
+//     85%
+//         padding: 1rem 1.5rem 0rem 1.5rem
+//     100%
+//         padding: 0.5rem 2rem
