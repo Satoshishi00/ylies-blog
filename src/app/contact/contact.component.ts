@@ -66,17 +66,30 @@ export class ContactComponent implements OnInit {
     let email = this.contactForm.get('email').value;
     let message = this.contactForm.get('message').value;
 
-    let text = `<h2>${name}</h2><h3>${email}</h3><p>${message}</p>`;
-    this.sendMail(text);
-    console.log('mail envoyé : ' + text);
+    if (!this.isEmailAddress(email)) {
+      alert('FORMULAIRE INVALIDE : EMAIL INCORRECT');
+    } else {
+      let text = `<h2>${name}</h2><h3>${email}</h3><p>${message}</p>`;
+      this.sendMail(text);
+      alert('Votre message a bien été envoyé !');
+      console.log('mail envoyé : ' + text);
+      document.getElementById('app-contact-container').style.display = 'none';
+    }
   }
 
   closeModal(event): void {
     event.preventDefault();
-    document.getElementById('app-contact-container').style.display = 'none';
+    document
+      .getElementById('app-contact-container')
+      .classList.toggle('displayFlex');
   }
 
   sendMail(text): void {
     this.httpService.sendMail(text);
+  }
+
+  isEmailAddress(str) {
+    let pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    return str.match(pattern);
   }
 }
