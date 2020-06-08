@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectsComponent,
     ToolsComponent,
     ContactComponent,
+    TabAmortissementComponent,
   ],
   imports: [
     BrowserModule,

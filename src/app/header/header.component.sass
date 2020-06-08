@@ -1,16 +1,24 @@
 $blue: #2980b9
-$green: #16a085
+$green-old: #16a085
 $orange: #d35400
 $purple: #8e44ad
+$grey: #4d4d4f
+$darkgrey: #3e3e3e
+
+$pink: #00cec9//#ed1c6f
+$yellow: #e8e925
+$green: #74c54f
 
 h1
-    color: $blue
+    color: $green
     text-align: center
     font-size: 3.5rem
     margin: 1rem
+    font-family: 'Architects Daughter', cursive
+
 h2
     text-align: center
-    color: #767676
+    color: $grey
     font-size: 1.5rem
 
 ul
@@ -24,7 +32,7 @@ a
     display: flex
     justify-content: center
     align-items: center
-    background-color: lightgrey
+    background-color: $darkgrey
     .titles-container
         display: flex
         justify-content: center
@@ -42,12 +50,12 @@ a
         li:hover
             cursor: pointer
         .link-1
-            border: 2px solid $orange
+            border: 2px solid $pink
         .link-2
-            border: 2px solid $green
+            border: 2px solid $yellow
             margin-right: 59px
         .link-3
-            border: 2px solid $purple
+            border: 2px solid $green
         .margin-left
             margin-left: 60px
         .icon
@@ -67,7 +75,7 @@ a
     font-weight: bold
     margin: 0rem 3rem
     padding: 0.5rem 0rem
-    background-color: lightgrey
+    background-color: $grey
     li
         padding: 0.5rem 1rem
         border-radius: 1.5rem
@@ -79,16 +87,16 @@ a
         transition: all 0.4s ease-out
         padding: 0.5rem 2rem
     .link-1
-        border: 2px solid $purple
+        border: 2px solid $pink
         a
-            color: $purple
+            color: $pink
     .link-2
-        border: 2px solid $green
+        border: 2px solid $yellow
         a
-            color: $green
+            color: $yellow
     .link-3
-        border: 2px solid $orange
-        color: $orange
+        border: 2px solid $green
+        color: $green
 
 // @keyframes hover-anim
 //     0%

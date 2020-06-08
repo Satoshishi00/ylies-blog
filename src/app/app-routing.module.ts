@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ContactComponent } from './contact/contact.component';
+import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'tools', component: ToolsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'macadam', component: MacadamComponent },
+  { path: 'tableau-amortissement', component: TabAmortissementComponent },
 ];
 
 @NgModule({
