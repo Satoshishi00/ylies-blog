@@ -9,17 +9,36 @@ $pink: #00cec9//#ed1c6f
 $yellow: #e8e925
 $green: #74c54f
 
+/* from... */
+@mixin media-min($pixel)
+    @media screen and (min-width: $pixel)
+        @content
+
+/* to... */
+@mixin media-max($pixel)
+    @media screen and (max-width: $pixel - 1)
+        @content
+
+/* from... to... */
+@mixin media-between($pixel-min, $pixel-max)
+    @media screen and (min-width: $pixel-min) and (max-width: $pixel-max - 1)
+        @content
+
 h1
     color: $green
     text-align: center
     font-size: 3.5rem
     margin: 1rem
     font-family: 'Architects Daughter', cursive
+    @include media-max($pixel: 500px)
+        font-size: 2rem
 
 h2
     text-align: center
     color: $grey
     font-size: 1.5rem
+    @include media-max($pixel: 500px)
+        font-size: 1rem
 
 ul
     list-style-type: none
@@ -41,12 +60,24 @@ a
             height: 110px
             width: 110px
             border-radius: 50%
+            @include media-max($pixel: 500px)
+                height: 50px
+                width: 50px
+                margin: 0.5rem
+
     .social-networks-links
         display: flex
         flex-direction: column
+        @include media-max($pixel: 500px)
+            padding-left: 0.5rem
+
         li
             height: 56px
             width: 56px
+            @include media-max($pixel: 500px)
+                height: 30px
+                width: 30px
+
         li:hover
             cursor: pointer
         .link-1
@@ -58,11 +89,18 @@ a
             border: 2px solid $green
         .margin-left
             margin-left: 60px
+            @include media-max($pixel: 500px)
+                margin-left: 34px
+
         .icon
             height: 40px
             width: 40px
             padding: 8px
             transition: all 0.3s ease-out
+            @include media-max($pixel: 500px)
+                height: 24px
+                width: 24px
+                padding: 3px
         .icon:hover
             cursor: pointer
             height: 50px
@@ -76,6 +114,9 @@ a
     margin: 0rem 3rem
     padding: 0.5rem 0rem
     background-color: $grey
+    @include media-max($pixel: 500px)
+        margin: 0rem 1rem
+
     li
         padding: 0.5rem 1rem
         border-radius: 1.5rem
@@ -111,3 +152,41 @@ a
 //         padding: 1rem 1.5rem 0rem 1.5rem
 //     100%
 //         padding: 0.5rem 2rem
+
+$small-screen: 375px
+$medium-sceen: 1024px
+
+//Mise en page propre
+
+// $breakpoints: (
+//         phone-down: 500px,
+//         tablet-up: 768px,
+//         tablet-down: 900px,
+//         desktop-up: 1024px,
+//         desktop-down: 1280px,
+//         widescreen-up: 1440px
+// )
+
+// /* from... */
+// @mixin media-min($_key)
+//     @media screen and (min-width: map-get($breakpoints, $_key))
+//         @content
+
+// /* to... */
+// @mixin media-max($_key)
+//     @media screen and (max-width: map-get($breakpoints, $_key) - 1)
+//         @content
+
+// /* from... to... */
+// @mixin media-between($_keymin, $_keymax)
+//     @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: map-get($breakpoints, $_keymax) - 1)
+//         @content
+
+// /* at... */
+// @mixin media($_key)
+//     @media screen and (min-width: map-get($breakpoints, $_key)) and (max-width: map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $_key) + 1)) - 1)
+//         @content
+
+.bloc
+    display: block
+    clear: both
