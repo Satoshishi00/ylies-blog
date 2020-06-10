@@ -17,16 +17,20 @@ a
 
     ul
         flex-direction: column
-        margin: 0rem 9rem
+        margin: 0rem
+        padding: 0rem
+        align-items: center
         @include media-max($pixel: 500px)
             margin: 0rem 1rem
-            padding: 0rem
 
         li
             margin-bottom: 2rem
             border: 1px solid grey
             padding: 0.5rem
             border-radius: 1rem
+            width: 32rem
+            @include media-max($pixel: 550px)
+                width: 90%
 
             a
                 display: flex
