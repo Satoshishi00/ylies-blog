@@ -11,28 +11,32 @@ a
     display: flex
     justify-content: center
     margin: 2rem
-    @include media-max($pixel: 500px)
+    @include media-max($pixel: 820px)
         flex-direction: column
-        margin: 1rem
+        margin: 0rem 1rem 1rem
 
     .column
-        width: 50%
+        width: 25rem
         margin: 0.5rem
         display: flex
         flex-direction: column
         align-items: center
-        @include media-max($pixel: 500px)
+        @include media-max($pixel: 820px)
             width: 100%
             margin: 0rem
 
         //border: 1px solid black
         //padding: 0rem 1rem
+        h2
+            margin-top: 2rem
         ul
             width: 100%
+            margin: 0rem
             li
                 border: 1px solid black
                 margin-bottom: 1rem
                 height: 10rem
+                border-radius: 1rem
                 //width: 30rem
                 //padding: 0.5rem
                 @include media-max($pixel: 500px)
@@ -70,5 +74,5 @@ a
                 color: grey
                 border: solid grey 1px
                 border-radius: 2rem
-                padding-left: 0.5rem 1rem
+                padding: 0.5rem 1rem
                 background-color: white
