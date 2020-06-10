@@ -6,15 +6,19 @@ h1
     font-size: 3.5rem
     margin: 1rem
     font-family: 'Architects Daughter', cursive
-    @include media-max($pixel: 500px)
+    @include media-max($pixel: 600px)
         font-size: 2rem
+    @include media-max($pixel: 400px)
+        font-size: 1.4rem
 
 h2
     text-align: center
     color: $grey
     font-size: 1.5rem
-    @include media-max($pixel: 500px)
+    @include media-max($pixel: 600px)
         font-size: 1rem
+    @include media-max($pixel: 400px)
+        font-size: 0.8rem
 
 ul
     list-style-type: none
@@ -103,6 +107,8 @@ a
             border-radius: 1.5rem
             magin: 1rem
             transition: all 0.4s ease-out
+            @include media-max($pixel: 500px)
+                font-size: 0.8rem
             //background: white
         li:hover
             cursor: pointer
