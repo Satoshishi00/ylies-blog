@@ -1,3 +1,5 @@
+@import '../app.component'
+
 .tab-amortissement
     font-family: 'Architects Daughter', cursive
     display: flex
@@ -5,27 +7,50 @@
     width: 100%
     align-content: center
     text-align: -webkit-center
+    font-size: 0.8rem
+    @include media-between($pixel-min: 450px, $pixel-max: 600px)
+        font-size: 1rem
+    @include media-between($pixel-min: 600px, $pixel-max: 800px)
+        font-size: 1.2rem
+    @include media-min($pixel: 800px)
+        font-size: 1.4rem
 
     form
         margin: 1rem
         display: flex
         flex-direction: column
+        align-items: center
 
         div
             display: flex
             flex-direction: row
+            margin-bottom: 0.3rem
 
             label
-                width: 8rem
+                width: 10rem
+                @include media-between($pixel-min: 600px, $pixel-max: 800px)
+                    width: 12rem
+                @include media-min($pixel: 800px)
+                    width: 14rem
+
         input
             width: 5rem
             border: solid 2px grey
             border-radius: 2rem
             padding-left: 0.5rem
+            background-color: white
+            @include media-between($pixel-min: 600px, $pixel-max: 800px)
+                width: 7rem
+            @include media-min($pixel: 800px)
+                width: 9rem
 
-    table
-        text-align: center
-        max-width: 800px
+            // color: grey
+        .btn-simuler
+            margin-top: 1rem
+            border-color: black
+            color: black
+            padding: 0.5rem 2rem
+            width: 7rem
 
     .abstract
         text-align: left
@@ -42,3 +67,7 @@
                 margin-left: 3rem
             span.total-amount-interest
                 margin-left: 5rem
+
+    table
+        text-align: center
+        max-width: 800px

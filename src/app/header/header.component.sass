@@ -84,36 +84,41 @@ a
             padding: 3px
             transition: all 0.4s ease-out
 
-.menu
-    justify-content: space-evenly
-    font-weight: bold
-    margin: 0rem 3rem
-    padding: 0.5rem 0rem
-    background-color: $grey
-    @include media-max($pixel: 500px)
-        margin: 0rem 1rem
+.menu-container
+    display: flex
+    width: 100%
+    justify-content: center
+    .menu
+        justify-content: space-evenly
+        font-weight: bold
+        margin: 0rem 0rem
+        width: 50rem
+        padding: 0.5rem 0rem
+        background-color: $grey
+        @include media-max($pixel: 500px)
+            margin: 0rem 1rem
 
-    li
-        padding: 0.5rem 1rem
-        border-radius: 1.5rem
-        magin: 1rem
-        transition: all 0.4s ease-out
-        //background: white
-    li:hover
-        cursor: pointer
-        transition: all 0.4s ease-out
-        padding: 0.5rem 2rem
-    .link-1
-        border: 2px solid $pink
-        a
-            color: $pink
-    .link-2
-        border: 2px solid $yellow
-        a
-            color: $yellow
-    .link-3
-        border: 2px solid $green
-        color: $green
+        li
+            padding: 0.5rem 1rem
+            border-radius: 1.5rem
+            magin: 1rem
+            transition: all 0.4s ease-out
+            //background: white
+        li:hover
+            cursor: pointer
+            transition: all 0.4s ease-out
+            padding: 0.5rem 2rem
+        .link-1
+            border: 2px solid $pink
+            a
+                color: $pink
+        .link-2
+            border: 2px solid $yellow
+            a
+                color: $yellow
+        .link-3
+            border: 2px solid $green
+            color: $green
 
 // @keyframes hover-anim
 //     0%
@@ -128,9 +133,6 @@ a
 //         padding: 1rem 1.5rem 0rem 1.5rem
 //     100%
 //         padding: 0.5rem 2rem
-
-$small-screen: 375px
-$medium-sceen: 1024px
 
 //Mise en page propre
 

@@ -10,15 +10,11 @@
       <input type="number" name="time" id="time">
     </div>
     <div>
-      <label for="annual_rate">Taux annuel(%)</label>
+      <label for="annual_rate">Taux annuel (%)</label>
       <input type="number" step="0.01" name="annual_rate" id="annual_rate">
     </div>
-    <input type="submit" value="simuler" id="simuler" (click)='simulate($event)'>
+    <input type="submit" value="SIMULER" id="simuler" class="btn-simuler" (click)='simulate($event)'>
   </form>
-
-  <table id="table">
-
-  </table>
 
   <div id="abstract" class="abstract">
     <div><span class="total-label">Total des mensualités</span><span class="total-amount-mensuality"
@@ -27,5 +23,9 @@
     <div><span class="total-label">Total des intérêts</span><span class="total-amount-interest" id="interest"></span>
     </div>
   </div>
+
+  <table id="table">
+
+  </table>
 
 </section>
