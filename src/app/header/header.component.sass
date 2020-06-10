@@ -1,28 +1,4 @@
-$blue: #2980b9
-$green-old: #16a085
-$orange: #d35400
-$purple: #8e44ad
-$grey: #4d4d4f
-$darkgrey: #3e3e3e
-
-$pink: #00cec9//#ed1c6f
-$yellow: #e8e925
-$green: #74c54f
-
-/* from... */
-@mixin media-min($pixel)
-    @media screen and (min-width: $pixel)
-        @content
-
-/* to... */
-@mixin media-max($pixel)
-    @media screen and (max-width: $pixel - 1)
-        @content
-
-/* from... to... */
-@mixin media-between($pixel-min, $pixel-max)
-    @media screen and (min-width: $pixel-min) and (max-width: $pixel-max - 1)
-        @content
+@import "../app.component"
 
 h1
     color: $green
