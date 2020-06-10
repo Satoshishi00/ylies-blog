@@ -49,8 +49,11 @@
             margin-top: 1rem
             border-color: black
             color: black
-            padding: 0.5rem 2rem
+            padding: 0.5rem 1rem
             width: 7rem
+            @include media-min($pixel: 800px)
+                padding: 0.5rem 2rem
+                width: 9rem
 
     .abstract
         text-align: left
