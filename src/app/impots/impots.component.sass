@@ -1,0 +1,53 @@
+@import '../app.component'
+
+.impots-revenu
+    font-family: 'Architects Daughter', cursive
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    form
+        display: flex
+        flex-direction: column
+        align-items: center
+        div
+            display: flex
+            flex-direction: row
+            margin-bottom: 0.3rem
+            .input-label
+                width: 10rem
+                @include media-between($pixel-min: 600px, $pixel-max: 800px)
+                    width: 12rem
+                @include media-min($pixel: 800px)
+                    width: 14rem
+            input
+                width: 5rem
+                border: solid 2px grey
+                border-radius: 2rem
+                padding-left: 0.5rem
+                background-color: white
+                @include media-between($pixel-min: 600px, $pixel-max: 800px)
+                    width: 7rem
+                @include media-min($pixel: 800px)
+                    width: 9rem
+
+        .btn-simuler
+            margin: 1rem 0rem
+            border-color: black
+            color: black
+            padding: 0.5rem 1rem
+            width: 7rem
+            border-radius: 2rem
+            background-color: white
+            @include media-min($pixel: 800px)
+                padding: 0.5rem 2rem
+                width: 9rem
+
+    .abstract
+        div
+
+            .tranche-amount
+                color: $red
+            .total-amount
+                color: $red
+                font-size: 2rem

@@ -13,6 +13,7 @@ import { ToolsComponent } from './tools/tools.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement.component';
+import { ImpotsComponent } from './impots/impots.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement
     ToolsComponent,
     ContactComponent,
     TabAmortissementComponent,
+    ImpotsComponent,
   ],
   imports: [
     BrowserModule,

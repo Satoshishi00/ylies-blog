@@ -1,0 +1,32 @@
+<section id="impots-revenu" class="impots-revenu">
+
+  <h1>Impots sur le revenu</h1>
+
+  <form action="">
+    <div>
+      <label for="amount" class="input-label">Revenu net imposable</label>
+      <input type="number" name="amount" id="amount">
+    </div>
+    <div>
+      <label for="parts" class="input-label">Nombre de parts</label>
+      <input type="number" name="parts" id="parts">
+    </div>
+    <input type="submit" value="SIMULER" id="simuler" class="btn-simuler" (click)='simulate($event)'>
+  </form>
+
+  <div id="abstract" class="abstract">
+    <!-- <div><span class="tranche-label">Tranche à 0% : </span><span class="tranche-amount-save" id="tranche-0"></span>
+    </div> -->
+    <div><span class="tranche-label">Tranche à 14% : </span><span class="tranche-amount" id="tranche-1"></span>
+    </div>
+    <div><span class="tranche-label">Tranche à 30% : </span><span class="tranche-amount" id="tranche-2"></span>
+    </div>
+    <div><span class="tranche-label">Tranche à 41% : </span><span class="tranche-amount" id="tranche-3"></span>
+    </div>
+    <div><span class="tranche-label">Tranche à 45% : </span><span class="tranche-amount" id="tranche-4"></span>
+    </div>
+    <div><span class="tranche-label">Total : </span><span class="total-amount" id="total-amount"></span>
+    </div>
+  </div>
+
+</section>
