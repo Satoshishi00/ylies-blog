@@ -56,7 +56,7 @@ export class ImpotsComponent implements OnInit {
       // tranches_impot[0] = amount;
     }
 
-    //On arrondi de toutes les tranches
+    //On calcule le total des
     let total_impot = 0;
 
     for (let i = 1; i < tranches_impot.length; i++) {
