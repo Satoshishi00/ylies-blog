@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root',
 })
 export class HttpService {
-  private url = 'http://mailhub.ylies.xyz?message=';
+  private url = 'https://mailhub.ylies.xyz?message=';
 
   private httpOptions = {};
 
