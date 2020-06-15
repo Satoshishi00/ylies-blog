@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpService } from '../http.service';
-import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-contact',
@@ -42,23 +41,6 @@ export class ContactComponent implements OnInit {
         console.log('message :', message);
         this.contactForm.get('message').setValue(message);
     }
-    // if (event.target.name.length > 0) {
-    //   let name = event.target.value;
-    //   console.log(`name : ${name}`);
-    //   this.contactForm.get('name').setValue(name);
-    // }
-
-    // if (event.target.email.length > 0) {
-    //   let email = event.target.value;
-    //   console.log(`email : ${email}`);
-    //   this.contactForm.get('email').setValue(email);
-    // }
-
-    // if (event.target.message > 0) {
-    //   let message = event.target.value;
-    //   console.log('message :', message);
-    //   this.contactForm.get('message').setValue(message);
-    // }
   }
 
   onSubmit() {
