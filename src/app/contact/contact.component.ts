@@ -89,7 +89,7 @@ export class ContactComponent implements OnInit {
   }
 
   isEmailAddress(str) {
-    let pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    let pattern = /^\w{1,16}\.?\w{1,16}@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     return str.match(pattern);
   }
 }
