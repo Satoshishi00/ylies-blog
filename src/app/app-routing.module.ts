@@ -14,7 +14,18 @@ const routes: Routes = [
   { path: 'tools', component: ToolsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'macadam', component: MacadamComponent },
-  { path: 'tableau-amortissement', component: TabAmortissementComponent },
+  {
+    path: 'tableau-amortissement',
+    component: TabAmortissementComponent,
+    data: {
+      title: "Tableau d'amortissement",
+      description: "Essayez mon tableau d'amortissement réaliser vos projets",
+      ogUrl: 'https://ylies.xyz/tableau-amortissement/',
+      ogImage: 'https://ylies.xyz/assets/sigma.png',
+      keywords:
+        "tableau d'amortissement, calcul de mensualités, amortir un investissement, calcul de prêt, prêt banquaire, taux d'intérêt, calcul ylies",
+    },
+  },
   { path: 'impots-revenu', component: ImpotsComponent },
 ];
 
