@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement.component';
 import { ImpotsComponent } from './impots/impots.component';
 import { InvestissementLocatifComponent } from './investissement-locatif/investissement-locatif.component';
+import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InvestissementLocatifComponent } from './investissement-locatif/investi
     TabAmortissementComponent,
     ImpotsComponent,
     InvestissementLocatifComponent,
+    FraisNotaireComponent,
   ],
   imports: [
     BrowserModule,

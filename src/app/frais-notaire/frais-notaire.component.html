@@ -1,0 +1,45 @@
+<section id="investissement-locatif" class="investissement-locatif">
+
+  <h1>Calcul des frais de notaire</h1>
+
+  <form action="">
+    <div>
+      <label for="investissement_price" class="input-label">Prix d'achat du bien</label>
+      <input type="text" name="investissement_price" id="investissement_price">
+    </div>
+    <div>
+      <label for="notaire_price" class="input-label">Département du bien</label>
+      <input type="number" name="departement" id="departement">
+    </div>
+    <div class="meublee">
+      <p>Neuf ?</p>
+      <div>
+        <label for="neuf" class="">Oui</label>
+        <input type="radio" name="neuf" id="neuf" value="true">
+        <label for="neuf_false" class="">Non</label>
+        <input type="radio" name="neuf" id="neuf_false" value="false" checked>
+      </div>
+    </div>
+    <input type="submit" value="SIMULER" id="simuler" class="btn-simuler" (click)='simulate()'>
+  </form>
+
+  <div id="abstract" class="abstract">
+
+    <h3>Frais</h3>
+    <div><span class="tranche-label">Droit de mutation : </span><span class="outcome" id="droits_mutation"></span>
+    </div>
+    <div><span class="tranche-label">Emolument du notaire : </span><span class="outcome" id="emolument_notaire"></span>
+    </div>
+    <div><span class="tranche-label">Emolument de formalité : </span><span class="outcome"
+        id="emolument_formalite"></span>
+    </div>
+    <div><span class="tranche-label">Frais divers : </span><span class="outcome" id="frais_divers"></span>
+    </div>
+    <div><span class="tranche-label">Contribution à la sécurité immobilière : </span><span class="outcome"
+        id="securite_immobiliere"></span>
+    </div>
+    <div><span class="tranche-label">Total : </span><span class="total-outcome" id="total_frais_notaire"></span>
+    </div>
+  </div>
+
+</section>

@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement.component';
 import { ImpotsComponent } from './impots/impots.component';
 import { InvestissementLocatifComponent } from './investissement-locatif/investissement-locatif.component';
+import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   },
   { path: 'impots-revenu', component: ImpotsComponent },
   { path: 'investissement-locatif', component: InvestissementLocatifComponent },
+  { path: 'frais-notaire', component: FraisNotaireComponent },
 ];
 
 @NgModule({
