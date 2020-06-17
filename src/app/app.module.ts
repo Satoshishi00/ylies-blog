@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement.component';
 import { ImpotsComponent } from './impots/impots.component';
+import { InvestissementLocatifComponent } from './investissement-locatif/investissement-locatif.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ImpotsComponent } from './impots/impots.component';
     ContactComponent,
     TabAmortissementComponent,
     ImpotsComponent,
+    InvestissementLocatifComponent,
   ],
   imports: [
     BrowserModule,

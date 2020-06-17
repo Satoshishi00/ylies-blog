@@ -1,0 +1,62 @@
+<section id="investissement-locatif" class="investissement-locatif">
+
+  <h1>Investissement locatif</h1>
+
+  <form action="">
+    <div>
+      <label for="investissement_price" class="input-label">Prix d'achat du bien</label>
+      <input type="text" name="investissement_price" id="investissement_price">
+    </div>
+    <div>
+      <label for="notaire_price" class="input-label">Frais de notaires</label>
+      <input type="text" name="notaire_price" id="notaire_price">
+    </div>
+    <div>
+      <label for="refreshing_price" class="input-label">Travaux à prévoir</label>
+      <input type="text" name="refreshing_price" id="refreshing_price">
+    </div>
+    <div>
+      <label for="foncier" class="input-label">Impôts foncier (an)</label>
+      <input type="text" name="foncier" id="foncier">
+    </div>
+    <div>
+      <label for="copropriete" class="input-label">Charges de copropriété (an)</label>
+      <input type="text" name="copropriete" id="copropriete">
+    </div>
+    <div>
+      <label for="loyer_mensuel" class="input-label">Loyer mensuel</label>
+      <input type="text" name="loyer_mensuel" id="loyer_mensuel">
+    </div>
+    <div>
+      <label for="charges_recuperables" class="input-label">Charges récupérables (mois)</label>
+      <input type="text" name="charges_recuperables" id="charges_recuperables">
+    </div>
+    <div class="meublee">
+      <p>Location meublé ?</p>
+      <div>
+        <label for="meublee" class="">Oui</label>
+        <input type="radio" name="meublee" id="meublee" value="true">
+        <label for="meublee_false" class="">Non</label>
+        <input type="radio" name="meublee" id="meublee_false" value="false" checked>
+      </div>
+    </div>
+    <input type="submit" value="SIMULER" id="simuler" class="btn-simuler" (click)='simulate()'>
+  </form>
+
+  <div id="abstract" class="abstract">
+
+    <h3>Pour 12 mois de location plein</h3>
+    <div><span class="tranche-label">Coût total d'acquisition : </span><span class="outcome" id="cout_achat"></span>
+    </div>
+    <div><span class="tranche-label">Entrées locative : </span><span class="income" id="entree_location"></span>
+    </div>
+    <div><span class="tranche-label">Impôts sur revenu locatif : </span><span class="outcome" id="impots_revenu"></span>
+    </div>
+    <div><span class="tranche-label">Total des frais annuel : </span><span class="outcome"
+        id="total_frais_annuel"></span>
+    </div>
+    <div><span class="tranche-label">Revenu annuel : </span><span class="total-income" id="revenu_annuel"></span>
+    </div>
+  </div>
+
+</section>
