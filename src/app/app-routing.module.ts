@@ -11,11 +11,66 @@ import { InvestissementLocatifComponent } from './investissement-locatif/investi
 import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'tools', component: ToolsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'macadam', component: MacadamComponent },
+  {
+    path: '',
+    component: HomeComponent,
+    data: {
+      title: "Le blog d'Yliès Rochdi",
+      description: 'Concepteur développeur web',
+      ogUrl: 'https://ylies.xyz',
+      ogImage: 'https://ylies.xyz/assets/ylies-web.png',
+      keywords:
+        'Yliès, Ylies, Rochdi, Blog, Projets, Outils, Développeur, Web, Concepteur, ylies.xyz',
+    },
+  },
+  {
+    path: 'projects',
+    component: ProjectsComponent,
+    data: {
+      title: 'Projets informatique',
+      description: 'Découvrez certains de mes projets',
+      ogUrl: 'https://ylies.xyz/projects/',
+      ogImage: 'https://ylies.xyz/assets/brainers.png',
+      keywords:
+        'brainers.xyz, Brainer, Brainers, Faites de la musique, Faitesdelamusique, assofaitesdelamusique, rochdimaths, macadam, horticulture-duffaut, horticulture, duffaut,horticulture-duffaut.xyz, assofaitesdelamusique.fr, rochdimaths.com, ylies',
+    },
+  },
+  {
+    path: 'tools',
+    component: ToolsComponent,
+    data: {
+      title: 'Outils',
+      description: 'Divers outils',
+      ogUrl: 'https://ylies.xyz/tools/',
+      ogImage: 'https://ylies.xyz/tools/sigma.png',
+      keywords:
+        'revenu, impôts, amortissement, prêt, banque, emprunt, frais, coût, cout, notaire, notariaux, notarié, mensualité, calcul, tableau, investissement, rentabilité, immobilier, locatif, location, immobilière, outils, ylies',
+    },
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: {
+      title: 'Contact',
+      description: 'Contactez-moi !',
+      ogUrl: 'https://ylies.xyz/contact/',
+      ogImage: 'https://ylies.xyz/assets/ylies-web.png',
+      keywords:
+        'contact, contactez, mail, ylies, rochdi, question, demande, information, ylies.xyz',
+    },
+  },
+  {
+    path: 'macadam',
+    component: MacadamComponent,
+    data: {
+      title: 'Macadam',
+      description: 'Jeu de plateau sur terminal',
+      ogUrl: 'https://ylies.xyz/macadam/',
+      ogImage: 'https://ylies.xyz/assets/macadam.png',
+      keywords:
+        'jeu, plateau, macadam, terminal, université paul sabatier, projet, ylies',
+    },
+  },
   {
     path: 'tableau-amortissement',
     component: TabAmortissementComponent,
@@ -25,12 +80,47 @@ const routes: Routes = [
       ogUrl: 'https://ylies.xyz/tableau-amortissement/',
       ogImage: 'https://ylies.xyz/assets/sigma.png',
       keywords:
-        "tableau d'amortissement, calcul de mensualités, amortir un investissement, calcul de prêt, prêt banquaire, taux d'intérêt, calcul ylies",
+        'tableau, amortissement, mensualité, calcul, amortir, amortissement, investissement, achat, prêt, emprunt, banque, banquaire, simulateur, ylies',
     },
   },
-  { path: 'impots-revenu', component: ImpotsComponent },
-  { path: 'investissement-locatif', component: InvestissementLocatifComponent },
-  { path: 'frais-notaire', component: FraisNotaireComponent },
+  {
+    path: 'impots-revenu',
+    component: ImpotsComponent,
+    data: {
+      title: 'Impôts sur le revenu',
+      description: 'Estimez vos impôts sur le revenu',
+      ogUrl: 'https://ylies.xyz/impots-revenu/',
+      ogImage: 'https://ylies.xyz/assets/sigma.png',
+      keywords:
+        'impôts, impots, revenu, calcul, déterminer, outil, simulateur, ylies',
+    },
+  },
+  {
+    path: 'investissement-locatif',
+    component: InvestissementLocatifComponent,
+    data: {
+      title: 'Simulateur investissement locatif',
+      description:
+        "Simulez la rentabilité d'un projet d'investissement locatif",
+      ogUrl: 'https://ylies.xyz/investissement-locatif/',
+      ogImage: 'https://ylies.xyz/assets/sigma.png',
+      keywords:
+        'simulateur, investissement, locatif, location, calculer, rentabilité, ylies',
+    },
+  },
+  {
+    path: 'frais-notaire',
+    component: FraisNotaireComponent,
+    data: {
+      title: 'Simulateur frais de notaire',
+      description:
+        "Estimez le coût des frais de notaire d'un achat immobilier en France",
+      ogUrl: 'https://ylies.xyz/frais-notaire/',
+      ogImage: 'https://ylies.xyz/assets/sigma.png',
+      keywords:
+        'simulateur, frais, notaire, notariaux, notariés, achat, immobilier, france, acte, estimer, déterminer, cout, coût, calcul, ylies',
+    },
+  },
 ];
 
 @NgModule({
