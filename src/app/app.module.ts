@@ -16,6 +16,7 @@ import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement
 import { ImpotsComponent } from './impots/impots.component';
 import { InvestissementLocatifComponent } from './investissement-locatif/investissement-locatif.component';
 import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
+import { BrutNetComponent } from './brut-net/brut-net.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
     ImpotsComponent,
     InvestissementLocatifComponent,
     FraisNotaireComponent,
+    BrutNetComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { TabAmortissementComponent } from './tab-amortissement/tab-amortissement
 import { ImpotsComponent } from './impots/impots.component';
 import { InvestissementLocatifComponent } from './investissement-locatif/investissement-locatif.component';
 import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
+import { BrutNetComponent } from './brut-net/brut-net.component';
 
 const routes: Routes = [
   {
@@ -119,6 +120,18 @@ const routes: Routes = [
       ogImage: 'https://ylies.xyz/assets/sigma.png',
       keywords:
         'simulateur, frais, notaire, notariaux, notariés, achat, immobilier, france, acte, estimer, déterminer, cout, coût, calcul, ylies',
+    },
+  },
+  {
+    path: 'salaire-brut-net',
+    component: BrutNetComponent,
+    data: {
+      title: 'Salaire brut en net',
+      description: 'Convertissez votre salaire brut en net',
+      ogUrl: 'https://ylies.xyz/salaire-brut-net/',
+      ogImage: 'https://ylies.xyz/assets/sigma.png',
+      keywords:
+        'simulateur, salaire, paie, brut, net, annuel, horaire, mensuel, taux, convertisseur, convertir, déterminer, estimer, estimation, calcul, smic, 2020, ylies, rochdi',
     },
   },
 ];
