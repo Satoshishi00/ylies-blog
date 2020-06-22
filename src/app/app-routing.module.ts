@@ -131,7 +131,7 @@ const routes: Routes = [
       ogUrl: 'https://ylies.xyz/salaire-brut-net/',
       ogImage: 'https://ylies.xyz/assets/sigma.png',
       keywords:
-        'simulateur, salaire, paie, brut, net, annuel, horaire, mensuel, taux, convertisseur, convertir, déterminer, estimer, estimation, calcul, smic, 2020, ylies, rochdi',
+        'simulateur, salaire, paie, brut, net, annuel, horaire, mensuel, taux, convertisseur, convertir, déterminer, estimer, estimation, calcul, smic, fonctionnaire, cadre, liberale, portage, ylies',
     },
   },
 ];
