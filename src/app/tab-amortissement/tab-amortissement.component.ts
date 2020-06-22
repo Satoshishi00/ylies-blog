@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class TabAmortissementComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    document.getElementById('amount').addEventListener('keyup', (e) => {
+      console.log(e.target['value']);
+      e.target['value'] = this.numStr(
+        e.target['value'].replace(/\s/g, ''),
+        ' '
+      ).toString();
+    });
+  }
 
   round(float: number) {
     if (float) {
@@ -20,7 +28,9 @@ export class TabAmortissementComponent implements OnInit {
     event.preventDefault();
 
     // Récupération des infos du form
-    const amount = document.getElementById('amount')['value'];
+    const amount = Number(
+      document.getElementById('amount')['value'].replace(/\s/g, '')
+    );
     const time = document.getElementById('time')['value'];
     const annual_rate = document.getElementById('annual_rate')['value'];
 
@@ -119,5 +129,21 @@ export class TabAmortissementComponent implements OnInit {
       totalInterest
     ).toString();
     document.getElementById('abstract').style.display = 'flex';
+  }
+
+  //séapre par b les milliers du nombre a
+  numStr(a, b) {
+    a = '' + a;
+    b = b || ' ';
+    var c = '',
+      d = 0;
+    while (a.match(/^0[0-9]/)) {
+      a = a.substr(1);
+    }
+    for (var i = a.length - 1; i >= 0; i--) {
+      c = d != 0 && d % 3 == 0 ? a[i] + b + c : a[i] + c;
+      d++;
+    }
+    return c;
   }
 }
