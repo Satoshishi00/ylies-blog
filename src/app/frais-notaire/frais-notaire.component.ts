@@ -11,7 +11,7 @@ export class FraisNotaireComponent implements OnInit {
   ngOnInit(): void {
     document
       .getElementById('investissement_price')
-      .addEventListener('blur', (e) => {
+      .addEventListener('keyup', (e) => {
         e.target['value'] = this.numStr(
           e.target['value'].replace(/\s/g, ''),
           ' '

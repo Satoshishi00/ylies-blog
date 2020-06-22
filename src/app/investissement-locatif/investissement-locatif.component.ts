@@ -21,7 +21,7 @@ export class InvestissementLocatifComponent implements OnInit {
 
     // Réécriture montant input
     for (let input_name of inputs_name) {
-      document.getElementById(input_name).addEventListener('blur', (e) => {
+      document.getElementById(input_name).addEventListener('keyup', (e) => {
         e.target['value'] = this.numStr(
           e.target['value'].replace(/\s/g, ''),
           ' '
