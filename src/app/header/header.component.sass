@@ -104,26 +104,45 @@ a
             margin: 0rem 1rem
 
         li
-            padding: 0.5rem 1rem
+            // padding: 0.5rem 1rem
             border-radius: 1.5rem
             magin: 1rem
-            transition: all 0.4s ease-out
+
+            height: 2.5rem
+            display: flex
+            align-items: center
             @include media-max($pixel: 500px)
                 font-size: 0.8rem
-            //background: white
-        li:hover
-            cursor: pointer
-            transition: all 0.4s ease-out
-            padding: 0.5rem 2rem
+
         .link-1
             border: 2px solid $pink
-            color: $pink
+            a
+                color: $pink
+                padding: 0rem 1rem
+                transition: all 0.4s ease-out
+            a:hover
+                cursor: pointer
+                transition: all 0.4s ease-out
+                padding: 0rem 2rem
         .link-2
             border: 2px solid $yellow
-            color: $yellow
+            a
+                color: $yellow
+                padding: 0rem 1rem
+                transition: all 0.4s ease-out
+            a:hover
+                cursor: pointer
+                transition: all 0.4s ease-out
+                padding: 0rem 2rem
         .link-3
             border: 2px solid $green
             color: $green
+            padding: 0rem 1rem
+            transition: all 0.4s ease-out
+        .link-3:hover
+            cursor: pointer
+            transition: all 0.4s ease-out
+            padding: 0rem 2rem
 
 //Mise en page propre
 
