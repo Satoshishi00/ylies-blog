@@ -17,6 +17,8 @@ import { ImpotsComponent } from './impots/impots.component';
 import { InvestissementLocatifComponent } from './investissement-locatif/investissement-locatif.component';
 import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
 import { BrutNetComponent } from './brut-net/brut-net.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { BrutNetComponent } from './brut-net/brut-net.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],
