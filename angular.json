@@ -29,6 +29,7 @@
               "src/site.webmanifest",
               "src/sitemap.xml",
               "src/robots.txt",
+              "src/manifest.webmanifest",
               "src/manifest.webmanifest"
             ],
             "styles": [
@@ -62,7 +63,7 @@
                 }
               ],
               "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              "ngswConfigPath": "./ngsw-config.json"
             }
           }
         },
@@ -94,6 +95,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/site.webmanifest",
+              "src/manifest.webmanifest",
               "src/manifest.webmanifest"
             ],
             "styles": [
