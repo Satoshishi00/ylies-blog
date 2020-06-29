@@ -11,6 +11,9 @@
         "/manifest.webmanifest",
         "/*.css",
         "/*.js",
+        "/*.png",
+        "/dist/ylies-blog/*.js",
+        "/*.ttf",
         "/assets/*.png"
       ]
     }
