@@ -19,6 +19,7 @@ import { FraisNotaireComponent } from './frais-notaire/frais-notaire.component';
 import { BrutNetComponent } from './brut-net/brut-net.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { environment } from '../environments/environment';
     InvestissementLocatifComponent,
     FraisNotaireComponent,
     BrutNetComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
