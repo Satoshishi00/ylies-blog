@@ -56,13 +56,14 @@ a
         flex-direction: column
         @include media-max($pixel: 500px)
             padding-left: 0.5rem
+            margin: 0.5rem 0rem
 
         li
             height: 56px
             width: 56px
             @include media-max($pixel: 500px)
-                height: 30px
-                width: 30px
+                height: 35px
+                width: 35px
 
         li:hover
             cursor: pointer
@@ -71,12 +72,14 @@ a
         .link-2
             border: 2px solid $yellow
             margin-right: 59px
+            @include media-max($pixel: 500px)
+                margin-right: 40px
         .link-3
             border: 2px solid $green
         .margin-left
             margin-left: 60px
             @include media-max($pixel: 500px)
-                margin-left: 34px
+                margin-left: 38px
 
         .icon
             height: 40px
@@ -84,8 +87,8 @@ a
             padding: 8px
             transition: all 0.3s ease-out
             @include media-max($pixel: 500px)
-                height: 24px
-                width: 24px
+                height: 29px
+                width: 29px
                 padding: 3px
         .icon:hover
             cursor: pointer
