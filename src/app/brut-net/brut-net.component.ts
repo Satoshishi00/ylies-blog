@@ -135,4 +135,16 @@ export class BrutNetComponent implements OnInit {
   round(float: number) {
     return Math.round(float * 100) / 100;
   }
+
+  displaySmic() {
+    document.getElementById('salarie-non-cadre')['checked'] = true;
+    this.field_input_name = 'horaire-brut';
+    this.field_input_amount = 10.15;
+    this.contrat_rate = 0.22;
+    this.calculOtherFields(
+      this.field_input_name,
+      this.field_input_amount,
+      this.contrat_rate
+    );
+  }
 }

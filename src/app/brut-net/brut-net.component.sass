@@ -5,7 +5,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    padding-bottom: 3rem
+    padding-bottom: 4rem
 
     form
         display: flex
@@ -48,3 +48,11 @@
                 label
                     text-align: center
                     height: 3rem
+                    @include media-max($pixel: 500px)
+                        font-size: 0.6rem
+            .btn-smic
+                border: solid 1px black
+                border-radius: 1rem
+                padding: 0.5rem 1rem
+                margin-top: 1rem
+                background-color: white
